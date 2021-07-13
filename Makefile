@@ -20,3 +20,15 @@ build:
 		victor-mono/src/assets/VictorMono-Italic.ttf \
 		source-code-pro/OTF/SourceCodePro-Semibold.otf \
 		source-code-pro/OTF/SourceCodePro-SemiboldIt.otf
+
+.PHONY: install
+install: build
+	@mkdir -p /usr/local/share/fonts/
+	@rm -rf /usr/local/share/fonts/VictorCodePro
+	@mv build /usr/local/share/fonts/VictorCodePro
+	@sudo fc-cache -f
+
+.PHONY: uninstall
+uninstall:
+	@rm -rf /usr/local/share/fonts/VictorCodePro
+	@sudo fc-cache -f
