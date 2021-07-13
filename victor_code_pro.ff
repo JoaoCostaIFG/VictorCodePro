@@ -1,0 +1,36 @@
+#!/usr/bin/env fontforge
+
+while ($argc > 1)
+  tmp = $1
+  shift
+
+  Open(tmp)
+  ScaleToEm(1000)
+
+  if ($italicangle != 0)
+    # is Italic
+    if ($weight == "Book")
+      name = "VictorCodePro-It"
+      fullname = "Victor Code Pro Italic"
+      filename = "VictorCodePro-It.otf"
+    else
+      name = "VictorCodePro-" + $weight + "It"
+      fullname = "Victor Code Pro " + $weight + " Italic"
+      filename = "VictorCodePro-" + $weight + "It.otf"
+    endif
+  else
+    if ($weight == "Book")
+      name = "VictorCodePro-Regular"
+      fullname = "Victor Code Pro"
+      filename = "VictorCodePro-Regular.otf"
+    else
+      name = "VictorCodePro-" + $weight
+      fullname = "Victor Code Pro " + $weight
+      filename = "VictorCodePro-" + $weight + ".otf"
+    endif
+  endif
+
+    SetFontNames(name, "Victor Code Pro", fullname)
+    Generate("build/" + filename)
+  Close()
+endloop
