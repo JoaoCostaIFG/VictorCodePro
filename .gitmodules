@@ -1,0 +1,6 @@
+[submodule "source-code-pro"]
+	path = source-code-pro
+	url = https://github.com/adobe-fonts/source-code-pro.git
+[submodule "victor-mono"]
+	path = victor-mono
+	url = https://github.com/rubjo/victor-mono.git
