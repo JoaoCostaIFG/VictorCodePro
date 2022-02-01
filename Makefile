@@ -9,7 +9,7 @@ build:
 		source-code-pro/OTF/SourceCodePro-Black.otf \
 		source-code-pro/OTF/SourceCodePro-BlackIt.otf \
 		source-code-pro/OTF/SourceCodePro-Bold.otf \
-		source-code-pro/OTF/SourceCodePro-BoldIt.otf \
+		./victor-mono/dist/woff2/VictorMono-BoldItalic.woff2 \
 		source-code-pro/OTF/SourceCodePro-ExtraLight.otf \
 		source-code-pro/OTF/SourceCodePro-ExtraLightIt.otf \
 		source-code-pro/OTF/SourceCodePro-Light.otf \
@@ -17,7 +17,7 @@ build:
 		source-code-pro/OTF/SourceCodePro-Medium.otf \
 		source-code-pro/OTF/SourceCodePro-MediumIt.otf \
 		source-code-pro/OTF/SourceCodePro-Regular.otf \
-		victor-mono/src/assets/VictorMono-Italic.ttf \
+		victor-mono/dist/woff2/VictorMono-Italic.woff2 \
 		source-code-pro/OTF/SourceCodePro-Semibold.otf \
 		source-code-pro/OTF/SourceCodePro-SemiboldIt.otf
 
