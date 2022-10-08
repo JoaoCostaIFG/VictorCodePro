@@ -1,7 +1,3 @@
-.PHONY: clean
-clean:
-	@rm -rf build
-
 .PHONY: build
 build:
 	@mkdir -p build
@@ -27,6 +23,10 @@ install: build
 	@rm -rf /usr/local/share/fonts/VictorCodePro
 	@mv build /usr/local/share/fonts/VictorCodePro
 	@sudo fc-cache -f
+
+.PHONY: clean
+clean:
+	@rm -rf build
 
 .PHONY: uninstall
 uninstall:
